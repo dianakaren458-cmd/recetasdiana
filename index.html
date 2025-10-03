@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Blog Culinario</title>
+  <link rel="stylesheet" href="estilo.css">
+  <script defer src="script.js"></script>
+</head>
+<body id="inicio">  
+  <header>
+    <nav>
+      <a href="#inicio" class="logo" aria-label="Ir al inicio">
+        <img class="logo" src="glog.jpg" alt="logo de mi blog">
+        <span>MI BLOG CULINARIO</span>
+      </a>
+
+      <ul class="menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#recetas">Recetas</a></li>
+        <li><a href="#categorias">Categorías</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+
+      <button id="hamburger" class="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <button id="modo-oscuro" class="modo-btn" aria-label="Cambiar a modo oscuro">🌙</button>
+    </nav>
+  </header>
+
+  <aside id="sidebar" class="sidebar" aria-hidden="true">
+    <button id="close-btn" class="close-btn" aria-label="Cerrar menú">✖</button>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#recetas">Recetas</a></li>
+      <li><a href="#categorias">Categorías</a></li>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </aside>
+
+  <main>
+    <section id="inicio" class="receta-card">
+      <h1>¡Hola! Bienvenido a mi Blog Culinario</h1>
+      <p>Aquí encontrarás recetas caseras, fáciles de preparar y que podrás disfrutar con tu familia.</p>
+      <p><a href="#recetas" class="boton-receta">Ver recetas destacadas</a></p>
+    </section>
+
+    <section id="recetas">
+      <h2>Recetas Destacadas</h2>
+
+      <article class="receta-card">
+        <h3>🍝 Arroz con blanco</h3>
+        <figure>
+          <img src="arrocito.jpg" alt="Arroz con blanco">
+          <figcaption>Arroz con blanco ideal para comidas y reuniones informales.</figcaption>
+        </figure>
+        <p>Puedes acompañarlo salsa verde o roja o longaniza y tu bebida favorita.</p>
+        <p>⏱ 40 min salsa | 12 min arroz | ⭐ Fácil</p>
+        <a href="recetas de arroz con blanco.html" class="boton-receta">Ver receta completa</a>
+      </article>
+
+      <article class="receta-card">
+        <h3>🍲 Sopa Blanca con Pechugas Empanizadas</h3>
+        <figure>
+          <img src="sopitaa.jpg" alt="Sopa blanca con pechugas empanizadas">
+          <figcaption>Sopa blanca con pechugas empanizadas, reconfortante y llena de sabor.</figcaption>
+        </figure>
+        <p>Ideal con ensalada de lechuga y zanahoria, o agua de frutas.</p>
+        <p>⏱ 30 min sopa | 20 min pechugas | ⭐ Fácil</p>
+        <a href="recetas de espagueti.html" class="boton-receta">Ver receta completa</a>
+      </article>
+
+      <article class="receta-card">
+        <h3>🍓 Fresas con Crema</h3>
+        <figure>
+          <img src="fresitaaa.jpeg" alt="Fresas con crema">
+          <figcaption>Postre fresco y delicioso para compartir.</figcaption>
+        </figure>
+        <p>Combina con kiwi o durazno, y un toque de nueces.</p>
+        <p>⏱ 15 min preparación | 2-3h refrigeración | ⭐ Fácil</p>
+        <a href="recetas de fresas.html" class="boton-receta">Ver receta completa</a>
+      </article>
+    </section>
+
+    <section id="sobre-mi" class="receta-card">
+      <h2>Sobre mí</h2>
+      <img src="dianita.jpg" alt="Foto de Diana">
+      <p>Hola, soy Diana y tengo 16 años. Me gusta aprender cosas nuevas y descubrir cómo los sabores pueden despertar recuerdos o emociones.</p>
+      <p>Quiero seguir experimentando con ingredientes y técnicas, y algún día cocinar con confianza y creatividad.</p>
+      <h4>Sígueme en redes</h4>
+      <p>Instagram: <a href="https://www.instagram.com/dianakaren3188" >📸</a></p>
+      <p>Facebook: <a href="https://www.facebook.com/share/1ARCfFdWqf/?" >📘</a></p>
+    </section>
+
+    <section id="newsletter" class="receta-card">
+      <h2>Suscríbete</h2>
+      <p>Recibe nuevas recetas y tips</p>
+      <form action="#" method="post">
+        <label for="email">Correo:</label>
+        <input type="email" id="email" placeholder="ejemplo@correo.com" required>
+        <button type="submit" class="boton-receta">Suscribirse</button>
+      </form>
+      <p id="mensaje"></p>
+    </section>
+  </main>
+
+  <footer id="contacto">
+    <p>Contacto: <a href="mailto:dianakaren458@gmail.com">dianakaren458@gmail.com</a></p>
+    <p>&copy; MI BLOG CULINARIO - DIANA KAREN</p>
+  </footer>
+</body>
+</html>
